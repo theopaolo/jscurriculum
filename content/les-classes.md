@@ -1,12 +1,9 @@
 # Les Classes
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
-
 ## Définition
 
 Une **classe** est un plan de construction (*blueprint*) qui **définit la structure** et le comportement d'un objet en encapsulant ses **propriétés et méthodes**. Elle permet de créer des instances d'objets avec leurs propres états et comportements, tout en maintenant une séparation claire entre les éléments publics et privés grâce au système de visibilité natif.
-
 </aside>
 
 ### Concept clé
@@ -47,7 +44,7 @@ console.log(counter.#count); // SyntaxError: Private field '#count' must be decl
 ```jsx
 class BankAccount {
   #balance = 0;  // Propriété privée
-  
+
   deposit(amount) {
     if (amount > 0) {
       this.#balance += amount;

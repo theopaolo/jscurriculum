@@ -1,15 +1,12 @@
 # Fonctionnalités ES6 et plus
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
-
 ES6 ou ECMAScript 2015 est la seconde révision la plus importante de JavaScript, elle introduit multiples fonctionnalités nouvelles au langage le rendant plus moderne, puissant et facile à utiliser.
-
 </aside>
 
 Depuis **2016**, les versions d'ECMAScript sont nommées par année (ex. ECMAScript 2016, 2017, etc.). Depuis cette année, les évolutions du langage sont régulières et se concentrent sur des ajouts progressifs et des petites améliorations, plutôt que sur des révolutions majeures.
 
-![JavaScript ES6 features.png](Fonctionnalite%CC%81s%20ES6%20et%20plus%201253324cc3d7805fa8bef934d994b274/JavaScript_ES6_features.png)
+![JavaScript ES6 features.png](/content/fonctionnalites-es6/JavaScript_ES6_features.png)
 
 ## Les nouveautés révolutionnaires de ES6 (ECMAScript 2015)
 
@@ -29,7 +26,7 @@ Depuis **2016**, les versions d'ECMAScript sont nommées par année (ex. ECMAScr
 - **L'objet `Promise`** : Pour la gestion des opérations asynchrones.
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
+
 
 Les versions récentes de ECMAScript (à partir de 2018) n'apportent pas de révolutions majeures mais continuent d'améliorer le langage avec des fonctionnalités utiles. Les versions de 2019 à 2024 sont encore en cours d'implémentation dans certains navigateurs, et il est souvent nécessaire d'utiliser des polyfills pour garantir leur compatibilité en production.
 
@@ -79,20 +76,20 @@ Dans l'exemple ci-dessus, l'utilisation de `setTimeout()` avec une **arrow funct
 ### Cas d'utilisation des Arrow Functions
 
 - **Callbacks** : Les arrow functions sont parfaites pour les callbacks, car elles permettent de conserver le contexte d'exécution plus simplement.
-    
+
     ```jsx
     const numbers = [1, 2, 3];
     const squaredNumbers = numbers.map(num => num * num); // [1, 4, 9]
     ```
-    
+
 - **Méthodes asynchrones** : Les arrow functions sont également utiles pour les opérations asynchrones nécessitant de conserver le `this`.
-    
+
     ```jsx
     class Timer {
       constructor() {
         this.seconds = 0;
       }
-    
+
       start() {
         setInterval(() => {
           this.seconds++;
@@ -100,19 +97,19 @@ Dans l'exemple ci-dessus, l'utilisation de `setTimeout()` avec une **arrow funct
         }, 1000);
       }
     }
-    
+
     const myTimer = new Timer();
     myTimer.start(); // Affiche 1, 2, 3, etc., chaque seconde
     ```
-    
+
     Ici, `this` fait référence à l'instance de `Timer` car l'arrow function hérite du contexte lexical, contrairement à une fonction traditionnelle qui aurait besoin de `bind()` pour le faire.
-    
+
 - **Éviter les problèmes de `this`** : Les arrow functions sont souvent utilisées dans les classes et les objets pour éviter la confusion autour du mot-clé `this`.
 
 ### Quand **ne pas** utiliser les Arrow Functions
 
 - **Méthodes d'objet** : Si une fonction est destinée à être une méthode d'objet et que vous avez besoin d'un `this` qui soit l'instance actuelle de l'objet, une **fonction traditionnelle** est plus appropriée.
-    
+
     ```jsx
     const car = {
       brand: 'Toyota',
@@ -121,7 +118,7 @@ Dans l'exemple ci-dessus, l'utilisation de `setTimeout()` avec une **arrow funct
       }
     };
     ```
-    
+
 - **Constructeurs** : Les arrow functions ne peuvent pas être utilisées comme constructeurs, il faut donc privilégier des fonctions traditionnelles pour créer des objets via `new`.
 
 ## Destructuring
@@ -158,12 +155,12 @@ printPerson(person); // Affiche : "Alice is 30 years old."
     - **Déclarations de variables** : Extraire facilement des données d'objets ou de tableaux.
     - **Paramètres de fonction** : Simplifier les signatures de fonctions en accédant directement aux propriétés nécessaires.
     - **Échanger des valeurs :**
-    
+
     ```jsx
     let a = 1, b = 2;
     [a, b] = [b, a]; // a = 2, b = 1
     ```
-    
+
 
 ### Cas pratiques
 
@@ -199,7 +196,7 @@ const copyObj = { ...originalObj }; // Attention : 'b' est une référence, pas 
 ### Rest Operator (`...`)
 
 ```jsx
-// Rest dans les fonctions 
+// Rest dans les fonctions
 function sum(...numbers) {
   return numbers.reduce((acc, num) => acc + num, 0);
 }
@@ -228,22 +225,22 @@ const { name, ...rest } = person; // 'name' = 'Alice', 'rest' = { age: 30, city:
 ### Cas pratiques
 
 - **Fonctions avec arguments variés** :
-    
+
     ```jsx
     function multiply(multiplier, ...numbers) {
       return numbers.map(num => num * multiplier);
     }
     console.log(multiply(2, 1, 2, 3)); // [2, 4, 6]
     ```
-    
+
 - **Combinaison d'objets** :
-    
+
     ```jsx
     const defaultConfig = { theme: 'dark', layout: 'grid' };
     const userConfig = { layout: 'list' };
     const finalConfig = { ...defaultConfig, ...userConfig }; // { theme: 'dark', layout: 'list' }
     ```
-    
+
 - **Copie d'objets** : Le spread effectue une **copie superficielle**, donc attention aux objets imbriqués qui resteront référencés
 
 ## C’est le moment de pratiquer 👨‍💻

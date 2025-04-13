@@ -3,10 +3,7 @@
 ## Qu’est-ce que Node.js ?
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
-
 **Node.js** est un environnement d’exécution JavaScript côté serveur. Il permet d’exécuter du JavaScript en dehors d’un navigateur web, notamment sur un serveur. Il est construit sur le moteur JavaScript **V8** de Google Chrome, qui compile le code JavaScript en code machine, rendant son exécution extrêmement rapide.
-
 </aside>
 
 ## Pourquoi utiliser Node.js ?
@@ -46,7 +43,7 @@ La **boucle d’événements** est au cœur de Node.js. Elle permet à Node.js d
 Node.js utilise la bibliothèque **libuv** pour gérer les opérations I/O (réseau, système de fichiers, etc.). Cette bibliothèque est responsable de l’exécution des opérations lourdes en arrière-plan, permettant à Node.js de rester non bloquant tout en étant capable d’effectuer des tâches nécessitant beaucoup de temps (comme des opérations réseau ou de lecture/écriture).
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
+
 
 ## Les différents moteurs javascript
 
@@ -124,7 +121,7 @@ const path = require('path');
 const fullPath = path.join('/home', 'user', 'docs', 'file.txt');
 
 // Affichage du chemin complet
-console.log(fullPath); 
+console.log(fullPath);
 // Résultat : '/home/user/docs/file.txt' sur Unix | '\home\user\docs\file.txt' sur Windows
 ```
 
@@ -284,7 +281,7 @@ Créez un script Node.js qui lit le contenu d’un fichier texte et l’affiche 
 
 ### 2. Création d'un module personnalisé
 
-Étendez l'exercice 1 en créant un module personnalisé `fileReader.js` qui exporte une fonction pour lire des fichiers. 
+Étendez l'exercice 1 en créant un module personnalisé `fileReader.js` qui exporte une fonction pour lire des fichiers.
 
 *Utiliser ce module dans votre script principal.*
 
@@ -310,7 +307,7 @@ Créez une script Node.js qui utilise le module `http` pour servir le contenu du
 ---
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
+
 
 Une fois que tu as finaliser les exercises tu pourrais t’attaquer à ce petite projet :
 

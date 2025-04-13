@@ -3,10 +3,7 @@
 # Mini Serveur de Fichiers Statiques
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
-
-Ce projet est proposé afin de combiner les différents modules natifs (`fs`, `path`, et `http`) introduits dans la fiche  [Introduction à Node.js ](https://www.notion.so/Introduction-Node-js-1263324cc3d780019c99c48476827f8b?pvs=21) 
-
+  Ce projet est proposé afin de combiner les différents modules natifs (`fs`, `path`, et `http`) introduits dans la fiche  [Introduction à Node.js ](../introduction-a-node-js.md)
 </aside>
 
 ## Description du projet
@@ -91,7 +88,7 @@ server.listen(PORT, () => {
 
 ## Défis supplémentaires
 
-Pour rendre le projet plus intéressant, ajoute les suivantes fonctionnalités 
+Pour rendre le projet plus intéressant, ajoute les suivantes fonctionnalités
 
 1. Implémentez une page d'erreur 404 personnalisée.
 2. Ajoutez un système de journalisation (logging) pour enregistrer les requêtes reçues.

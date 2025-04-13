@@ -1,10 +1,7 @@
 # Notions théoriques supplémentaires
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
-
-Les notions suivantes te permettront de réaliser le challenge de manière autonome.
-
+    Les notions suivantes te permettront de réaliser le challenge de manière autonome.
 </aside>
 
 ## Routes et API REST
@@ -20,16 +17,16 @@ Une API REST (Representational State Transfer) permet à différentes applicatio
 - **DELETE** : Supprimer des données
 
 - **PUT/PATCH** : Modifier des données
-    
+
     ### Voici quelques exemples de routes que tu vas utiliser :
-    
+
     ```jsx
     GET    /api/notes     → Lister les notes
     GET    /api/notes/1   → Obtenir la note n°1
     POST   /api/notes     → Créer une note
     DELETE /api/notes/1   → Supprimer la note n°1
     ```
-    
+
 
 ## C'est quoi une API ?
 
@@ -210,7 +207,7 @@ async function deleteNote(id) {
     - POST → Créer
     - DELETE → Supprimer
 3. **Les réponses sont en JSON**
-    
+
     ```jsx
     {
         "success": true,
@@ -221,7 +218,7 @@ async function deleteNote(id) {
         }
     }
     ```
-    
+
 
 ### Codes HTTP Courants
 
@@ -235,7 +232,7 @@ async function deleteNote(id) {
 
 SQLite est une base de données légère qui se présente sous forme d’un simple fichier. Voici les concepts essentiels :
 
-**Dans notre projet voici une configuration simple** 
+**Dans notre projet voici une configuration simple**
 
 ```jsx
 // Tout d'abord intaller le module
@@ -245,7 +242,7 @@ npm install better-sqlite3
 const Database = require('better-sqlite3'); // importer le module
 const db = new Database('notes.db'); // créer un nouvelle DB
 
-// Ici tu pourras créer les différentes méthodes pour intéragir avec ta DB 
+// Ici tu pourras créer les différentes méthodes pour intéragir avec ta DB
 // addNote()
 // getNote()
 // getNotes() (au pluriel)
@@ -272,7 +269,7 @@ db.exec(`
 ```jsx
 // Préparation de la requête
 const insert = db.prepare(`
-    INSERT INTO notes (title, content) 
+    INSERT INTO notes (title, content)
     VALUES (?, ?)
 `);
 
@@ -329,7 +326,7 @@ try {
     - Échapper les entrées utilisateur
     - Utiliser des requêtes préparées
     - Valider les types de données
-    
+
 
 ### Test d'une Route API à l’aide de fetch
 
@@ -405,7 +402,7 @@ const MIME_TYPES = {
 
 ## **Communication Client-Serveur**
 
-Le fichier `index.html` du client utilise l’API fetch pour communiquer avec le serveur. 
+Le fichier `index.html` du client utilise l’API fetch pour communiquer avec le serveur.
 
 Voici quelques exemples :
 

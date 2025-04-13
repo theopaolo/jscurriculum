@@ -2,7 +2,7 @@
 
 ## Notre projet précédent
 
-[Archive.zip](Challenge%20-%20Refactorisation%20en%20Express%20js%201293324cc3d7801dbe86d09e275532c0/Archive.zip)
+[Archive.zip](/content/challenge-refactorisation/Archive.zip)
 
 ## Structure du Projet Refactorisé
 
@@ -42,7 +42,7 @@ project/
 
 ## Exemple de re-factorisation
 
-Dans notre premier challenge nous avions un fichier `server.js`  comme ceci 
+Dans notre premier challenge nous avions un fichier `server.js`  comme ceci
 
 ```jsx
 const http = require("http");
@@ -173,10 +173,10 @@ module.exports = app;
 const express = require('express');
 const router = express.Router();
 
-const { 
-    getAllNotes, 
-    createNote, 
-    deleteNote 
+const {
+    getAllNotes,
+    createNote,
+    deleteNote
 } = require('../controllers/notesController');
 
 router.get('/', getAllNotes);
@@ -284,7 +284,7 @@ class Note {
         const stmt = db.prepare('SELECT * FROM notes ORDER BY created_at DESC');
         return stmt.all();
     }
-    
+
     static getById(id) {
         const stmt = db.prepare('SELECT * FROM notes WHERE id = ?');
         return stmt.get(id);
@@ -296,7 +296,7 @@ class Note {
         const result = stmt.run(title, content);
         return { id: result.lastInsertRowid, title, content };
     }
-    
+
     static update(id, noteData) {
         const { title, content } = noteData;
         const stmt = db.prepare('UPDATE notes SET title = ?, content = ? WHERE id = ?');
@@ -324,7 +324,7 @@ describe('API Notes', () => {
         const res = await request(app)
             .post('/api/notes')
             .send({ title: 'Nouvelle Note', content: 'Contenu' });
-        
+
         expect(res.status).toBe(201);
         expect(res.body).toHaveProperty('id');
     });

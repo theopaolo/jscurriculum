@@ -1,14 +1,10 @@
 # Les Clôtures (Closures)
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
-
 ## Définition
-
 Une **clôture** (*closure*) est une fonction qui **retient l'accès** aux variables de son **environnement lexical** même après que la fonction parente ait terminé son exécution. Cela permet à la fonction de "se souvenir" de l'état des variables du contexte dans lequel elle a été créée, comme une petite mémoire interne à une fonction.
 
-[Closures dans les framework front](Les%20Clo%CC%82tures%20(Closures)%201263324cc3d78000a805d34b98b3d35c/Closures%20dans%20les%20framework%20front%201273324cc3d78019a1eeefb7bb9f9e52.md)
-
+[Closures dans les framework front](/content/les-closures/Closures-dans-les-framework-front.md)
 </aside>
 
 ### Concept clé
@@ -20,7 +16,7 @@ Les clôtures permettent aux fonctions internes de "capturer" l'environnement de
 
 ```jsx
 function createCounter() {
-    let count = 0; 
+    let count = 0;
     return function() {
         count++;
         return count;
@@ -125,7 +121,7 @@ const heavyClosure = createHeavyClosure();
 - Nommez clairement les fonctions internes pour améliorer la **lisibilité** et faciliter le **débogage**.
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
+
 
 ## **Conclusion**
 

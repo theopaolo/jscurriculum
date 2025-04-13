@@ -1,14 +1,11 @@
 # Challenge  - Application de Notes
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
-
 Dans ce challenge, nous allons plus loin avec dans nodeJS.
 
-C’est une application web simple permettant de gérer des notes personnelles. 
+C’est une application web simple permettant de gérer des notes personnelles.
 
 Ce projet vous permet de mettre en pratique vos connaisance de Node.js, d’avoir un  backend simple avec l’utilisation d'une base de données sqlite3.
-
 </aside>
 
 ![image.png](Challenge%20-%20Application%20de%20Notes%201273324cc3d780319bbbff42c0a80865/image.png)
@@ -60,14 +57,14 @@ project/
 
 - Utiliser SQLite via `better-sqlite3`
 - Créer une table 'notes' avec les champs :
-    
+
     ```sql
     - id (INTEGER PRIMARY KEY AUTOINCREMENT)
     - title (TEXT)
     - content (TEXT)
     - created_at (DATETIME)
     ```
-    
+
 
 ### API REST
 
@@ -137,7 +134,7 @@ node src/server.js
 3. Les notes s'affichent correctement
 4. Les notes peuvent être supprimées
 5. Les erreurs sont gérées proprement
-6. L'interface est responsive et utilisable 
+6. L'interface est responsive et utilisable
 
 ## 🎁 Bonus si tu arrive à finir rapidement
 

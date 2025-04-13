@@ -59,7 +59,7 @@ yarn add --dev jest
 # Structure des Tests
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
+
 
 Jest utilise une approche de test basée sur les comportements (Behavior-Driven Development - BDD) avec les fonctions describe, test et expect.
 

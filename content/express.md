@@ -7,10 +7,7 @@
 Express.js est un framework web minimaliste et flexible pour Node.js, qui permet de créer rapidement des applications web et des API. Il fournit un ensemble d'outils puissants tout en restant simple à utiliser, ce qui en fait le framework web le plus populaire pour Node.js.
 
 <aside>
-💡
-
-Remarque : Express.js ne gère pas tout à votre place. Il vous donne juste les outils essentiels pour démarrer rapidement, en vous laissant la liberté de structurer vos projets comme vous le souhaitez.
-
+  Remarque : Express.js ne gère pas tout à votre place. Il vous donne juste les outils essentiels pour démarrer rapidement, en vous laissant la liberté de structurer vos projets comme vous le souhaitez.
 </aside>
 
 ## Pourquoi utiliser Express.js ?
@@ -227,7 +224,7 @@ const morgan = require('morgan');
 app.use(morgan('dev'));
 ```
 
-1. **CORS** - Pour gérer les requêtes Cross-Origin Resource Sharing 
+1. **CORS** - Pour gérer les requêtes Cross-Origin Resource Sharing
 
 ```jsx
 const cors = require('cors');

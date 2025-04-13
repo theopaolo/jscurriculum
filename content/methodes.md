@@ -1,7 +1,7 @@
 # Méthodes de Tableaux
 
 <aside>
-<img src="https://www.notion.so/icons/info-alternate_green.svg" alt="https://www.notion.so/icons/info-alternate_green.svg" width="40px" />
+
 
 ## Définition
 
